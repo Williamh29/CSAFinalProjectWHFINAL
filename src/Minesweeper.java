@@ -10,7 +10,7 @@ public class Minesweeper implements ActionListener {
     private int gold = 1000000;
     private JPanel textPanel;
     private JFrame frame;
-    private JPanel buttPanel;
+    private JPanel buttonPanel;
     private JButton[][] buttons;
     JLabel textfield;
 
@@ -21,6 +21,11 @@ public class Minesweeper implements ActionListener {
     ArrayList<Integer> xPositions;
     ArrayList<Integer> yPositions;
     public Minesweeper() {
+        xPositions = new ArrayList<Integer>();
+        yPositions = new ArrayList<Integer>();
+        size = 10;
+        bombs = 10;
+
         random = new Random();
         for (int i = 0; i < bombs; i++) {
             xPositions.add(random.nextInt(size));
@@ -29,9 +34,37 @@ public class Minesweeper implements ActionListener {
 
         for (int i = 0; i < bombs; i++) {
             for (int j = i + 1; j < bombs; j++) {
-                if (xPositions.get(i) == xPositions.get(j) && yPositions)
+                if (xPositions.get(i) == xPositions.get(j) && yPositions.get(i) == yPositions.get(j)) {
+                    xPositions.set(j, random.nextInt(size));
+                    yPositions.set(j, random.nextInt(size));
+
+                    i =0;
+                    j =0; //resetting count to check again through the arraylist
+                }
             }
         }
+        for (int i = 0; i < bombs; i++) {
+            System.out.println("xPositions of "+i+" is"+xPositions.get(i));
+            System.out.println("yPositions of "+i+" is"+yPositions.get(i));
+        }
+        frame = new JFrame();
+        frame.setSize(500, 500);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //ends process of java platform when cross button is pressed
+        frame.setVisible(true);
+        frame.setLayout(new BorderLayout());
+
+        textPanel = new JPanel();
+        textPanel.setVisible(true);
+        textPanel.setBackground(Color.BLACK);
+
+        buttonPanel = new JPanel();
+        buttonPanel.setVisible(true);
+        buttonPanel.setLayout(new GridLayout(size, size));
+
+        textfield = new JLabel();
+        textfield.setHorizontalAlignment(JLabel.CENTER);
+        textfield.setFont(new Font ("MV Boli", Font.BOLD, 20));
+        textfield.setForeground(Color.BLUE);
         // panel = new JPanel();
 //        frame = new JFrame();
 //
