@@ -65,6 +65,23 @@ public class Minesweeper implements ActionListener {
         textfield.setHorizontalAlignment(JLabel.CENTER);
         textfield.setFont(new Font ("MV Boli", Font.BOLD, 20));
         textfield.setForeground(Color.BLUE);
+        textfield.setText(bombs + " Bombs");
+
+        buttons = new JButton[size][size];
+        for (int i = 0; i < buttons.length; i++) {
+            for (int j = 0; j < buttons[0].length; j++){
+                buttons[i][j] = new JButton();
+                buttons[i][j].setFocusable(false);
+                buttons[i][j].setFont(new Font("MV Boli", Font.BOLD, 12));
+                buttons[i][j].addActionListener(this);
+                buttons[i][j].setText("");
+                buttonPanel.add(buttons[i][j]);
+            }
+
+        }
+        textPanel.add(textfield);
+        frame.add(textPanel, BorderLayout.NORTH);
+        frame.add(buttonPanel);
         // panel = new JPanel();
 //        frame = new JFrame();
 //
