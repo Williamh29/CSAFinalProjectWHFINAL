@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04ce8c4a-5f38-4056-8554-f0427fb8cc0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ClickColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Timer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Minesweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Minesweeper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyGUI.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +49,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CountdownTimerGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountdownTimerGUI" />
+      <module name="CSAFinalProjectWH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CSAFinalProjectWH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimerCountdownGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TimerCountdownGUI" />
       <module name="CSAFinalProjectWH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,6 +74,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CountdownTimerGUI" />
+        <item itemvalue="Application.TimerCountdownGUI" />
       </list>
     </recent_temporary>
   </component>
